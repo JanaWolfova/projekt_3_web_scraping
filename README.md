@@ -1,35 +1,49 @@
-Scraper výsledků voleb z roku 2017
+# Scraper výsledků voleb z roku 2017
 
 Tento projekt scrapuje volební výsledky zadaného územního celku a ukládá je do souboru CSV.
-Instalace
 
-    Klonujte tento repozitář.
-    Vytvořte a aktivujte virtuální prostředí.
-    Nainstalujte knihovny uvedené v requirements.txt:
+## Instalace
+
+1. Klonujte tento repozitář.
+2. Vytvořte a aktivujte virtuální prostředí.
+3. Nainstalujte knihovny uvedené v requirements.txt:
 
 git clone <repo-url>
 cd <repo-directory>
-python -m venv venv  # Vytvoření virtuálního prostředí
-# Aktivace virtuálního prostředí
-# Na Windows:
+
+### Vytvoření virtuálního prostředí
+
+python -m venv myvenv
+
+### Aktivace virtuálního prostředí
+
+Na Windows:
+
 venv\Scripts\activate.bat
-# Na macOS/Linux:
+
+Na MacOS/Linux:
+
 source venv/bin/activate
+
+### Instalace knihoven
+
 pip install -r requirements.txt
 
+## Spuštění
 
-###### spuštění #######
 python web_scraping.py "<district>" <output_file>
 
-district - Vybraný okres, pro který chcete získat výsledky voleb roku 2017.
-output_file - Název souboru, do kterého se uloží výsledky.
+- **district**: Vybraný okres, pro který chcete získat výsledky voleb roku 2017.
+- **output_file**: Název souboru, do kterého se uloží výsledky.
 
-## příklad ##
+### Příklad
 
 python web_scraping.py "Brno-město" vysledky
 
 
-Seznam dostupných okresů
+
+
+# Seznam dostupných okresů
 
     Praha
     Benešov
