@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ## Spuštění
 
-python web_scraping.py "<district>" <output_file>
+python web_scraping.py "district" output_file
 
 - **district**: Vybraný okres, pro který chcete získat výsledky voleb roku 2017.
 - **output_file**: Název souboru, do kterého se uloží výsledky.
